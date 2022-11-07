@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/TemurmalikReact.github.io/material/static/css/main.e6c13ad2.css",
-    "main.js": "/TemurmalikReact.github.io/material/static/js/main.f7ff8881.js",
-    "static/js/787.41028738.chunk.js": "/TemurmalikReact.github.io/material/static/js/787.41028738.chunk.js",
-    "index.html": "/TemurmalikReact.github.io/material/index.html",
-    "main.e6c13ad2.css.map": "/TemurmalikReact.github.io/material/static/css/main.e6c13ad2.css.map",
-    "main.f7ff8881.js.map": "/TemurmalikReact.github.io/material/static/js/main.f7ff8881.js.map",
-    "787.41028738.chunk.js.map": "/TemurmalikReact.github.io/material/static/js/787.41028738.chunk.js.map"
+    "main.css": "/material/static/css/main.e6c13ad2.css",
+    "main.js": "/material/static/js/main.7d1b3351.js",
+    "static/js/787.41028738.chunk.js": "/material/static/js/787.41028738.chunk.js",
+    "index.html": "/material/index.html",
+    "main.e6c13ad2.css.map": "/material/static/css/main.e6c13ad2.css.map",
+    "main.7d1b3351.js.map": "/material/static/js/main.7d1b3351.js.map",
+    "787.41028738.chunk.js.map": "/material/static/js/787.41028738.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.f7ff8881.js"
+    "static/js/main.7d1b3351.js"
   ]
 }
