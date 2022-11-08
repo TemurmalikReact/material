@@ -1,6 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
-import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
+import { DataGrid, GridColDef, gridClasses } from "@mui/x-data-grid";
 import { Avatar, Button, Modal, Typography } from "@mui/material";
 
 function App() {
@@ -18,11 +18,12 @@ function App() {
       headerName: "Image",
       renderCell: (params) => (
         <Avatar
+          style={{  border: "1px rgb(200, 200, 255) solid", cursor: "pointer", boxShadow: '0 5px 5px rgb(100, 100, 100)' }}
           onClick={() => handleOpen(params.row.src)}
           src={params.row.src}
         />
       ),
-      width: 97.5,
+      width: 75,
       sortable: false,
       filterable: false,
       cellClassName: "white",
@@ -31,7 +32,7 @@ function App() {
     {
       field: "Description",
       headerName: "Description",
-      width: 600,
+      width: 500,
       filterable: true,
       cellClassName: "red",
       headerClassName: "red",
@@ -39,7 +40,7 @@ function App() {
     {
       field: "Made",
       headerName: "Made in",
-      width: 333,
+      width: 300,
       filterable: true,
       cellClassName: "blue",
       headerClassName: "blue",
@@ -47,7 +48,7 @@ function App() {
     {
       field: "Users",
       headerName: "Users",
-      width: 333,
+      width: 300,
       filterable: true,
       cellClassName: "green",
       headerClassName: "green",
@@ -98,7 +99,7 @@ function App() {
     <>
       <Box
         sx={{
-          height: 400,
+          height: 455,
           width: "100%",
           "& .white": {
             backgroundColor: "rgba(225, 225, 225, 0.25)",
@@ -111,10 +112,18 @@ function App() {
           },
           "& .green": {
             backgroundColor: "rgba(0, 255, 0, 0.25)",
-          }
+          },
         }}
       >
         <DataGrid
+          headerHeight={100}
+          getRowHeight={() => 'auto'}
+          sx={{
+            [`& .${gridClasses.cell}`]: {
+              minHeight: '100px',
+              maxHeight: '300px',
+            },
+          }}
           rows={rows}
           columns={columns}
           pageSize={5}
